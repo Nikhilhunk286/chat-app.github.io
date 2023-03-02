@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--First run this file by using live server then go to server.js and also go to node-server folder by cd node-server in terminal and then do nodemon server.js. After that go to the opened site and reload it to get the prompt to enter your name and then open another same tab and fill the prompt there and then start chatting.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mychat-Realtime Node Socket.io Chat App</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <img class="logo" src="chat1.png" alt="Error in displaying image">
+    <h1>Welcome to Mychat app.</h1>
+</nav>  
+<div class="container">
+  </div><!--Here we made a blank container ,which will  be filled by javascript directly.-->
+</div>
+<div class="send">
+    <form action="#" id="send-container">
+        <input type="text" name="messageInp" id="messageInp">
+        <button class="btn" type="submit">Send</button>
+    </form>
+</div>
+<script  src="http://localhost:8000/socket.io/socket.io.js"></script><!--This  is for connecting client to server.-->
+<script  src="client.js"></script><!--If we use scripts in head section then defer will be use like defer src='...' and it's used to make scripts load after the body-content runs, so the classes which are being used in scripts can be used js.-->
+</body>
+</html>
